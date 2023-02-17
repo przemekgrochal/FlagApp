@@ -42,7 +42,7 @@ function Country() {
           <div>Region: {country.region}</div>
           <div>Subregion: {country.subregion}</div>
           <div>Capital: {country.capital}</div>
-          <div>Currencies: {country.currencies.map((item, index) => <div key={index}><span>{item.symbol}</span><span>{item.name}</span></div>)}</div>
+          <div>Currencies: {country?.currencies.map((item, index) => <div key={index}><span>{item.symbol}</span><span>{item.name}</span></div>)}</div>
           <div><img src={country.flag} height="150" width="150" alt="img"></img></div>
         </Wrapper>
       )
